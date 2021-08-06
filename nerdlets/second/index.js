@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlockText, HeadingText, Layout, LayoutItem, Spacing} from 'nr1'
+import {BlockText, HeadingText, Layout, LayoutItem, Link, Spacing} from 'nr1'
 
 import NavBar from '../../src/NavBar'
 
@@ -19,7 +19,9 @@ export default class SecondNerdlet extends React.Component {
               <BlockText style={{textAlign: 'center'}}>This nerdlet has the id "second" in the Nerdpack with the launcher</BlockText>
             </Spacing>
             <Spacing type={[Spacing.TYPE.MEDIUM]}>
-              <Link style={{textAlign: 'center'}} to="">Nerdlet and repo location</Link>;
+              <div style={{textAlign: 'center'}}>
+                <Link to="https://github.com/JuliaNocera/mulitple-nerdlets-example/tree/main/nerdlets/second">Nerdlet and repo location</Link>
+              </div>
             </Spacing>
           </LayoutItem>
         </Layout>
