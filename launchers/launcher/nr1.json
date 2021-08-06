@@ -3,5 +3,5 @@
   "id": "launcher",
   "displayName": "Launcher",
   "description": "Describe me",
-  "rootNerdletId": "08dd6363-82af-4c21-ba95-6598cebf79d8.home"
+  "rootNerdletId": "home"
 }
