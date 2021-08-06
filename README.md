@@ -4,7 +4,7 @@ This repo and the [single-nerdlet-example](https://github.com/JuliaNocera/single
 
 ## Getting started
 
-To run this example locally, you will need to run this and the single-nerdlet-example repo locally at the same time. Also, since these are associated with my UUID, you will need to generate a new UUID for each and update the constants which reference the UUIDs in the `NavBar.jsx` file in both repos.
+To run this example locally, you will need to run this and the [single-nerdlet-example](https://github.com/JuliaNocera/single-nerdlet-example) repo locally at the same time. Also, since these are associated with my UUID, you will need to generate a new UUID for each and update the constants which reference the UUIDs in the `src/NavBar.jsx` file in both repos.
 
 Run the following:
 
@@ -15,7 +15,7 @@ npm install
 npm start
 ```
 
-After running the above commands, find your new UUID in the root `nr1.json` file. Use this UUID to replace the constant value for  `MULTIPLE_NERDLETS_EXAMPLE_NERDPACK_ID` in `NavBar.jsx`.
+After running the above commands, find your new UUID in the root `nr1.json` file. Use this UUID to replace the constant value for  `MULTIPLE_NERDLETS_EXAMPLE_NERDPACK_ID` in `src/NavBar.jsx`.
 
 Now go to the [single-nerdlet-example](https://github.com/JuliaNocera/single-nerdlet-example) repo and run that locally, following the ReadMe instructions there.
 
