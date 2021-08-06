@@ -14,8 +14,7 @@ export default class NavBar extends React.Component {
     return isCurrentView
   }
 
-  handleOnClick = (stateToPass) => {
-
+  buildNerdletForNavigation = (stateToPass) => {
     const {iceCream, currentView} = stateToPass
     let nerdletForNavigation = {}
 
@@ -84,7 +83,7 @@ export default class NavBar extends React.Component {
                       style={{width: '100%', height: '100%'}}
                       onClick={() => {
                         // See docs for example: https://developer.newrelic.com/apis/navigation/
-                        const nerdlet = this.handleOnClick({iceCream: iceCreamState, currentView: "ONE"})
+                        const nerdlet = this.buildNerdletForNavigation({iceCream: iceCreamState, currentView: "ONE"})
                         navigation.replaceNerdlet(nerdlet)
                       }}
                     >One</Button>
@@ -95,7 +94,7 @@ export default class NavBar extends React.Component {
                       style={{width: '100%', height: '100%'}}
                       onClick={() => {
                         // See docs for example: https://developer.newrelic.com/apis/navigation/
-                        const nerdlet = this.handleOnClick({iceCream: iceCreamState, currentView: "TWO"})
+                        const nerdlet = this.buildNerdletForNavigation({iceCream: iceCreamState, currentView: "TWO"})
                         navigation.replaceNerdlet(nerdlet)
                       }}
                     >Two</Button>
@@ -105,7 +104,7 @@ export default class NavBar extends React.Component {
                       type={this.isCurrentView(nerdletState, "THREE") ? Button.TYPE.PRIMARY : Button.TYPE.OUTLINE}
                       style={{width: '100%', height: '100%'}}
                       onClick={() => {
-                        const nerdlet = this.handleOnClick({iceCream: iceCreamState, currentView: "THREE"})
+                        const nerdlet = this.buildNerdletForNavigation({iceCream: iceCreamState, currentView: "THREE"})
                         navigation.replaceNerdlet(nerdlet)
                       }}
                     >Three</Button>
@@ -115,7 +114,7 @@ export default class NavBar extends React.Component {
                       type={this.isCurrentView(nerdletState, "FOUR") ? Button.TYPE.PRIMARY : Button.TYPE.OUTLINE}
                       style={{width: '100%', height: '100%'}}
                       onClick={() => {
-                        const nerdlet = this.handleOnClick({iceCream: iceCreamState, currentView: "FOUR"})
+                        const nerdlet = this.buildNerdletForNavigation({iceCream: iceCreamState, currentView: "FOUR"})
                         navigation.replaceNerdlet(nerdlet)
                       }}
                     >Four</Button>
